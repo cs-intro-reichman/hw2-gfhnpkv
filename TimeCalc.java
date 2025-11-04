@@ -24,8 +24,17 @@ public class TimeCalc {
         }
         hours = (hours + hoursToAdd) % 24;
 
-        //printing answer
-        System.out.println(hours + ":" + minitues);
+        //printing answer and checking overflow
+        String answer = "";
+        if (hours < 10) {
+            answer += '0';
+        }
+        answer += hours + ':';
+         if (hours < 10) {
+            answer += '0';
+        }
+        answer += minitues;
+        System.out.println(answer);
 
     }
 }
