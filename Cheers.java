@@ -19,7 +19,7 @@ public class Cheers {
                 //printing the word number of count
                 System.out.println("What does that spell?");
                 for (int i = 0; i < count; i++) {
-                        System.out.println(word + " ! ! !");
+                        System.out.println(word + "!!!");
             }
 
         }
