@@ -30,7 +30,7 @@ public class TimeCalc {
             answer = "0";
         }
         answer = answer + hours + ":";
-         if (hours < 10) {
+         if (minitues < 10) {
             answer = answer + "0";
         }
         answer = answer + minitues;
