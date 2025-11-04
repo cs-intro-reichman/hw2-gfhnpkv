@@ -27,13 +27,13 @@ public class TimeCalc {
         //printing answer and checking overflow
         String answer = "";
         if (hours < 10) {
-            answer += '0';
+            answer = "0";
         }
-        answer += hours + ':';
+        answer = answer + hours + ":";
          if (hours < 10) {
-            answer += '0';
+            answer = answer + "0";
         }
-        answer += minitues;
+        answer = answer + minitues;
         System.out.println(answer);
 
     }
