@@ -7,7 +7,7 @@ public class Cheers {
                 
                 //printing the spelling
                 for (int i = 0; i < word.length(); i++) {
-                        String a = "a";
+                        String a = "a ";
                         String search = "AEFHILMNORSX";
                         if (search.indexOf(word.charAt(i)) >= 0) {
                                 a = "an";
