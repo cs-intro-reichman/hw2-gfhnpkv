@@ -27,7 +27,7 @@ public class Collatz {
 					checkFirst = false;
 				}
 				if (mode.equals("v")) {
-					System.out.println(answer + "(" + count + ")");
+					System.out.println("1 " + answer + "(" + count + ")");
 				
 			}
 		}
