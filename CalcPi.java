@@ -12,7 +12,7 @@ public class CalcPi {
 		boolean plus = false;
 		int count = terms;
 		int i = 3;
-		while (count != 0) {
+		while (count != 1) {
 			if (plus) {
 				myPi = myPi + (1.0 / i);
 			} else {
