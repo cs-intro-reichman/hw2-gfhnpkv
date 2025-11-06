@@ -13,11 +13,13 @@ public class CalcPi {
 		int count = terms;
 		int i = 3;
 		while (count != 1) {
+			//checking + or -
 			if (plus) {
 				myPi = myPi + (1.0 / i);
 			} else {
 				myPi = myPi - (1.0 / i);
 			}
+			//make next loop
 			plus = !plus;
 			i = i + 2;
 			count = count - 1;
