@@ -8,10 +8,15 @@ public class Collatz {
 			//main loop
 			for (int i = 1; i < maxNumbers + 1; i++) {
 				int count = 0;
-				int seed = 1;
+				int seed = i;
 				String answer = "";
+				boolean checkFirst = false;
+				if (seed == 1){
+					checkFirst = true;
+				}
+
 				// dividing or muntiplis
-				while (seed != 1 && i != 1) {
+				while (seed != 1 || checkFirst) {
 					answer = answer + seed + " ";
 					if (seed % 2 == 0) {
 						seed = seed / 2;
@@ -19,6 +24,7 @@ public class Collatz {
 						seed = (seed * 3) + 1;
 					}
 					count++;
+					checkFirst = false;
 				}
 				if (mode.equals("v")) {
 					System.out.println(answer + "(" + count + ")");
