@@ -14,9 +14,9 @@ public class CalcPi {
 		int i = 3;
 		while (count != 0) {
 			if (plus) {
-				myPi = myPi + (1 / i);
+				myPi = myPi + (1.0 / i);
 			} else {
-				myPi = myPi - (1 / i);
+				myPi = myPi - (1.0 / i);
 			}
 			plus = !plus;
 			i = i + 2;
