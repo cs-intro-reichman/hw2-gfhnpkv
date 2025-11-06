@@ -24,9 +24,9 @@ public class Collatz {
 					System.out.println(answer + "(" + count + ")");
 				
 			}
-			//summery line
+		}
+		//summery line
 			System.out.println("Every one of the first " + maxNumbers +
 								" hailstone sequences reached 1.");
-		}
 	}
 }
